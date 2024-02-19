@@ -1,0 +1,9 @@
+p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+span {
+    font-size: 2rem;
+    border: 5px solid salmon;
+    padding: 20px 20px 20px 5px;
+}
