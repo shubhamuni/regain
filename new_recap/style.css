@@ -12,6 +12,11 @@ body{
     border:1px solid #bbb;
     transition: all 0.3s linear;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .main-nav{
     display: flex;
     list-style: none;
