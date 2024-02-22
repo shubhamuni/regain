@@ -79,10 +79,7 @@ footer {
     -o-transform:rotate(-7deg);
     transform:rotate(-7deg);
 }
-.some_content {
-    padding: 20rem;
-    /* justify-content: center; */
-}
+
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
