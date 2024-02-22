@@ -79,7 +79,10 @@ footer {
     -o-transform:rotate(-7deg);
     transform:rotate(-7deg);
 }
-
+.some_content {
+    padding: 20rem;
+    /* justify-content: center; */
+}
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
@@ -121,6 +124,7 @@ footer {
 }
 .yellow:hover {
     background: #ec9a49;
+    background: linear-gradient(top, #f29898 0%,#fe9604 100%);
 }
 /***********************************************************************
  *  Blue Background
