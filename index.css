@@ -3,6 +3,11 @@ body {
     background-size: cover;
 }
 
+section {
+    display: flex;
+    margin: 10%;
+    justify-content: center;
+}
 li {
     list-style: none;
     display: inline-block;
