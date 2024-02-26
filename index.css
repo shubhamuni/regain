@@ -8,12 +8,12 @@ section {
     margin: 10%;
     justify-content: center;
 }
+.main-nav {
+    display: flex;
+}
 .push {
     margin-left: auto;
 }
 li {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
     padding-left: 20px;
 }
