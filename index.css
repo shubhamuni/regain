@@ -10,10 +10,12 @@ section {
 }
 .main-nav {
     display: flex;
+    list-style: none;
 }
 .push {
     margin-left: auto;
 }
 li {
-    padding-left: 20px;
+    padding:0 20px 0 20px;
+    
 }
