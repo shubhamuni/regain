@@ -111,7 +111,7 @@ footer {
  *  Yellow Background
  **********************************************************************/
 .yellow{
-    background: #F3AAAA; /* Old browsers */
+    background: #ec8787; /* Old browsers */
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
@@ -119,7 +119,10 @@ footer {
     background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
     background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
 }
-
+.yellow:hover {
+    background: #ec9a49;
+    background: linear-gradient(top, #f29898 0%,#fe9604 100%);
+}
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
