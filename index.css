@@ -9,7 +9,7 @@ section {
     justify-content: center;
 }
 .push {
-    margin-left: auto;
+    padding-left: auto;
 }
 li {
     list-style: none;
