@@ -9,10 +9,11 @@ section {
     justify-content: center;
 }
 .push {
-    padding-left: auto;
+    margin-left: auto;
 }
 li {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 20px;
 }
