@@ -3,8 +3,24 @@ body {
     background-size: cover;
 }
 
-li {
+section {
+    display: flex;
+    margin: 10%;
+    justify-content: center;
+}
+.main-nav {
+    display: flex;
     list-style: none;
-    display: inline-block;
-    padding-left: 20px;
+}
+.push {
+    margin-left: auto;
+}
+li {
+    padding:0 20px 40px 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 20px 20px 20px;
 }
