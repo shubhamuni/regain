@@ -26,9 +26,9 @@ function signIn(user, pass){
         console.log(newsFeed);
         alert("Welcome to your profile shubham")
     } 
-    else if (user === database[0].username && pass === database[0].password){
+    else if (user === database[1].username && pass === database[1].password){
         console.log(newsFeed);
-        alert("Welcome to your profile shubham")
+        alert(`Welcome to your profile ${database[1].username}`)
     } else {
         alert("You entered wrong username or password")
     }
