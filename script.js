@@ -1,7 +1,13 @@
-let database = {
-    username: "shubham",
-    password: "secretpass"
-}
+let database = [
+    {
+        username: "shubham",
+        password: "secretpass"
+    }
+    {
+        username: "mahesh",
+        password: "oldpass"
+    }
+]
 let newsFeed = [
     { 
         username: "Shubham Patil", 
@@ -16,7 +22,11 @@ let userPrompt = prompt("What's your username?")
 let passPrompt = prompt("What's your password?")
 
 function signIn(user, pass){
-    if (user === database.username && pass === database.password){
+    if (user === database[0].username && pass === database[0].password){
+        console.log(newsFeed);
+        alert("Welcome to your profile shubham")
+    } 
+    else if (user === database[0].username && pass === database[0].password){
         console.log(newsFeed);
         alert("Welcome to your profile shubham")
     } else {
