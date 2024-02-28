@@ -18,6 +18,7 @@ let passPrompt = prompt("What's your password?")
 function signIn(user, pass){
     if (user === database.username && pass === database.password){
         console.log(newsFeed);
+        alert("Welcome to your profile shubham")
     } else {
         alert("You entered wrong username or password")
     }
