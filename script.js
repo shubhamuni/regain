@@ -19,6 +19,7 @@ function signIn(user, pass){
     if (user === database.username && pass === database.password){
         console.log(newsFeed);
     } else {
-        alert("You entered wrong username")
+        alert("You entered wrong username or password")
     }
 }
+signIn(userPrompt, passPrompt);
