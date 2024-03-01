@@ -6,7 +6,19 @@ let database = [
     {
         username: "mahesh",
         password: "oldpass"
-    }
+    },
+    {
+        username: "santosh",
+        password: "password"
+    },
+    {
+        username: "gaurav",
+        password: "secretpass"
+    },
+    {
+        username: "sahil",
+        password: "secret"
+    },
 ]
 let newsFeed = [
     { 
