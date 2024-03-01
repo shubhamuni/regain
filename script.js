@@ -44,7 +44,7 @@ function isUserValid(username, password){
 function signIn(user, pass){
     if (isUserValid(user, pass)){
         console.log(newsFeed)
-        alert(`Welcome to your profile ${database[i].username}`)
+        alert(`Welcome to your profile ${user}`)
     }  else {
         alert("You entered wrong username or password")
     }
