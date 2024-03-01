@@ -2,11 +2,23 @@ let database = [
     {
         username: "shubham",
         password: "secretpass"
-    }
+    },
     {
         username: "mahesh",
         password: "oldpass"
-    }
+    },
+    {
+        username: "santosh",
+        password: "password"
+    },
+    {
+        username: "gaurav",
+        password: "secretpass"
+    },
+    {
+        username: "sahil",
+        password: "secret"
+    },
 ]
 let newsFeed = [
     { 
@@ -20,16 +32,20 @@ let newsFeed = [
 ]
 let userPrompt = prompt("What's your username?")
 let passPrompt = prompt("What's your password?")
+function isUserValid(username, password){
+    for (let i=0; i < database.length; i++){
+        if (username === database[i].username && password === database[i].password){
+            return true;
+        }
+    }
+    return false;
+}
 
 function signIn(user, pass){
-    if (user === database[0].username && pass === database[0].password){
-        console.log(newsFeed);
-        alert("Welcome to your profile shubham")
-    } 
-    else if (user === database[1].username && pass === database[1].password){
-        console.log(newsFeed);
-        alert(`Welcome to your profile ${database[1].username}`)
-    } else {
+    if (isUserValid(user, pass)){
+        console.log(newsFeed)
+        alert(`Welcome to your profile ${database[i].username}`)
+    }  else {
         alert("You entered wrong username or password")
     }
 }
