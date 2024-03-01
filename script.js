@@ -36,7 +36,6 @@ function isUserValid(username, password){
     for (let i=0; i < database.length; i++){
         if (username === database[i].username && password === database[i].password){
             return true;
-            // alert(`Welcome to your profile ${database[i].username}`)
         }
     }
     return false;
