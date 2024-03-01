@@ -34,23 +34,20 @@ let userPrompt = prompt("What's your username?")
 let passPrompt = prompt("What's your password?")
 function isUserValid(username, password){
     for (let i=0; i < database.length; i++){
-        if (user === database[i].username && pass === database[i].password){
+        if (username === database[i].username && password === database[i].password){
             return true;
             // alert(`Welcome to your profile ${database[i].username}`)
-        }  else {
-            alert("You entered wrong username or password")
         }
     }
+    return false;
 }
 
 function signIn(user, pass){
-    for (let i=0; i < database.length; i++){
-        if (user === database[i].username && pass === database[i].password){
-            console.log(newsFeed)
-            alert(`Welcome to your profile ${database[i].username}`)
-        }  else {
-            alert("You entered wrong username or password")
-        }
+    if (isUserValid(user, pass)){
+        console.log(newsFeed)
+        alert(`Welcome to your profile ${database[i].username}`)
+    }  else {
+        alert("You entered wrong username or password")
     }
 }
 signIn(userPrompt, passPrompt);
