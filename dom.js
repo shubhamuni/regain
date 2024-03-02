@@ -7,7 +7,7 @@
     // Function to update click count and display it
     function updateCounter(event) {
         clickCount++;
-        counter.textContent = clickCount;
+        // counter.textContent = clickCount;
         
         // Create a new element to display click number
         var clickNumber = document.createElement('div');
@@ -24,7 +24,7 @@
         // Remove the click number element after 2 seconds
         setTimeout(function() {
             clickNumber.remove();
-        }, 10000);
+        }, 3000);
     }
     
     // Add event listener for click event on the document
