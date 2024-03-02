@@ -5,37 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Click Counter</title>
 <style>
-    body, html {
-        height: 100%;
+    body {
         margin: 0;
+        padding: 0;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: Arial, sans-serif;
     }
-    #click-counter {
+    #counter {
+        position: absolute;
+        top: 10px;
+        left: 10px;
         font-size: 24px;
     }
 </style>
 </head>
 <body>
-<div id="click-counter">0</div>
-
+<div id="counter">0</div>
 <script>
-    // Get the click-counter element
-    const clickCounter = document.getElementById('click-counter');
+    // Get the counter element
+    var counter = document.getElementById('counter');
     
     // Initialize click count
-    let clickCount = 0;
+    var clickCount = 0;
     
-    // Function to update click count and display
-    function updateClickCount() {
+    // Function to update click count and display it
+    function updateCounter(event) {
         clickCount++;
-        clickCounter.textContent = clickCount;
+        counter.textContent = clickCount;
+        
+        // Create a new element to display click number
+        var clickNumber = document.createElement('div');
+        clickNumber.textContent = clickCount;
+        clickNumber.style.position = 'absolute';
+        clickNumber.style.left = event.clientX + 'px';
+        clickNumber.style.top = event.clientY + 'px';
+        clickNumber.style.fontSize = '16px';
+        clickNumber.style.color = 'red';
+        clickNumber.style.pointerEvents = 'none'; // Ensure the new element doesn't capture clicks
+        document.body.appendChild(clickNumber);
+        
+        // Remove the click number element after 2 seconds
+        setTimeout(function() {
+            clickNumber.remove();
+        }, 2000);
     }
     
-    // Add event listener for clicks on the document
-    document.addEventListener('click', updateClickCount);
+    // Add event listener for click event on the document
+    document.addEventListener('click', updateCounter);
 </script>
 </body>
 </html>
