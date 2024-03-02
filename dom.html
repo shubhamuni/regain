@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Counter</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+    #click-counter {
+        font-size: 24px;
+    }
+</style>
+</head>
+<body>
+<div id="click-counter">0</div>
+
+<script>
+    // Get the click-counter element
+    const clickCounter = document.getElementById('click-counter');
+    
+    // Initialize click count
+    let clickCount = 0;
+    
+    // Function to update click count and display
+    function updateClickCount() {
+        clickCount++;
+        clickCounter.textContent = clickCount;
+    }
+    
+    // Add event listener for clicks on the document
+    document.addEventListener('click', updateClickCount);
+</script>
+</body>
+</html>
