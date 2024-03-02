@@ -16,7 +16,7 @@
         clickNumber.style.left = event.clientX + 'px';
         clickNumber.style.top = event.clientY + 'px';
         clickNumber.style.fontSize = '16px';
-        clickNumber.style.color = 'red';
+        clickNumber.style.color = 'tomato';
         clickNumber.style.pointerEvents = 'none'; // Ensure the new element doesn't capture clicks
         document.body.appendChild(clickNumber);
         
