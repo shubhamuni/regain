@@ -21,7 +21,7 @@ let addListAfterEnter = function(event) {
     }
 }
 function doneTask(task) {
-	if (true){
+	if (task.target.tagName === "LI"){
 		task.target.classList.toggle("done");
 	}
 }
