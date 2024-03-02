@@ -19,6 +19,15 @@ let database = [
         username: "sahil",
         password: "secret"
     },
+    
+    {
+        username: "mahesh",
+        password: "oldpass"
+    },
+    {
+        username: "satish",
+        password: "passkar"
+    },
 ]
 let newsFeed = [
     { 
