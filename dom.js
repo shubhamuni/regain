@@ -11,12 +11,13 @@
         
         // Create a new element to display click number
         var clickNumber = document.createElement('div');
+        clickNumber.className = "coolTitle";
         clickNumber.textContent = clickCount;
         clickNumber.style.position = 'absolute';
         clickNumber.style.left = event.clientX + 'px';
         clickNumber.style.top = event.clientY + 'px';
-        clickNumber.style.fontSize = '16px';
-        clickNumber.style.color = 'tomato';
+        // clickNumber.style.fontSize = '16px';
+        // clickNumber.style.color = 'tomato';
         clickNumber.style.pointerEvents = 'none'; // Ensure the new element doesn't capture clicks
         document.body.appendChild(clickNumber);
         
