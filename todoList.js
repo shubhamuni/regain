@@ -6,8 +6,9 @@ let appendList = function() {
         let li = document.createElement("li");
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
-}
+    input.value ="";
     }
+}
     
 
 button.addEventListener("click",appendList)
