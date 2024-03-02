@@ -21,6 +21,6 @@ let addListAfterEnter = function(event) {
     }
 }
     
-
+    
 button.addEventListener("click",addListAfterClick)
 input.addEventListener("keydown",addListAfterEnter)
