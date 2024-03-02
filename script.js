@@ -1,7 +1,7 @@
 let database = [
     {
         username: "shubham",
-        password: "secretpass"
+        password: "pass"
     },
     {
         username: "mahesh",
