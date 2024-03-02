@@ -20,7 +20,12 @@ let addListAfterEnter = function(event) {
         createListItem();
     }
 }
+function doneTask(task) {
+	if (true){
+		task.target.classList.toggle("done");
+	}
+}
     
-    
+ul.addEventListener("click",doneTask)
 button.addEventListener("click",addListAfterClick)
 input.addEventListener("keydown",addListAfterEnter)
