@@ -20,6 +20,6 @@ h3 {
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: none;
-    letter-spacing: 5em;
+    letter-spacing: 1px;
     width: 100%;
 }
