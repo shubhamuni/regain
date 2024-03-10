@@ -16,8 +16,16 @@ h1 {
     width: 100%;
 }
 h3 {
-    font-family:900 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+    font:900 1em 'Raleway', sans-serif;
+    color: rgba(154, 102, 102, 0.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 100%;
+}
+p {
+    font:900 1em 'Raleway', sans-serif;
+    color: rgba(154, 102, 102, 0.5);
     text-align: center;
     text-transform: none;
     letter-spacing: 1px;
