@@ -12,7 +12,7 @@ h1 {
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1em;
+    letter-spacing: 5px;
     width: 100%;
 }
 h3 {
@@ -20,7 +20,7 @@ h3 {
     color: rgba(154, 102, 102, 0.5);
     text-align: center;
     text-transform: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     width: 100%;
 }
 p {
@@ -28,6 +28,6 @@ p {
     color: rgba(154, 102, 102, 0.5);
     text-align: center;
     text-transform: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     width: 100%;
 }
