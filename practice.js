@@ -6,3 +6,5 @@ function cb() {
 setTimeout(cb, 1000);
 
 console.log("End calling")
+
+let start = new Date().getTime();
