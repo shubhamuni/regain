@@ -1,6 +1,14 @@
 const radius = [3,2,1,4];
+
 const area = function (radius) {
     return Math.PI*radius*radius;
+};
+
+const circumference = function (radius) {
+    return 2*Math.PI*radius;
+}
+const diameter = function (radius){
+    return 2*radius
 }
 
 function calculateArea(x,logic) {
@@ -9,8 +17,10 @@ function calculateArea(x,logic) {
         output.push(logic(x[i]))
     }
     return output;
-}
+};
 console.log(calculateArea(radius,area));
+console.log(calculateArea(radius,circumference));
+console.log(calculateArea(radius,diameter));
 
 
 
