@@ -8,6 +8,7 @@ const users = [
 ]
 
 const output = users.map(x => x.firstName+" "+x.lastName);
+
 console.log(output)
 
 // const array = [2,1,4,3,7,8,9,5];
