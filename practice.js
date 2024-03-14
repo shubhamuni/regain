@@ -7,6 +7,9 @@ const users = [
     {firstName:"Sunil",lastName:"Shetty",age:35},
 ]
 
+const output = users.map(x => x.firstName+" "+x.lastName);
+console.log(output)
+
 // const array = [2,1,4,3,7,8,9,5];
 
 // function isOdd(x) {
