@@ -1,26 +1,89 @@
-const radius = [3,2,1,4];
+//Examples of map, filter and reduce
+const users = [
+    {firstName:"Shubham",lastName:"Patil",age:25},
+    {firstName:"Akshay",lastName:"Kumar",age:58},
+    {firstName:"Akshay",lastName:"Saini",age:25},
+    {firstName:"Elon",lastName:"Musk",age:54},
+    {firstName:"Sunil",lastName:"Shetty",age:35},
+]
 
-const area = function (radius) {
-    return Math.PI*radius*radius;
-};
+//Firstly the output of array via map
+const outputMap = users.map(x => x.firstName+" "+x.lastName);
+console.log("Below array is created by map method");
+console.log(outputMap);
 
-const circumference = function (radius) {
-    return 2*Math.PI*radius;
-}
-const diameter = function (radius){
-    return 2*radius
-}
+//And the filter 
+const outputFilter = users.filter((x) => x.age > 30);
+console.log("Below array is created by filter method");
+console.log(outputFilter);
 
-function calculateArea(x,logic) {
-    const output = [];
-    for(let i = 0; i < x.length; i++){
-        output.push(logic(x[i]))
+
+//And filter with map
+const outputFilterWithMap = users.filter((x) => x.age > 30).map(x => x.firstName +" "+ x.lastName);
+console.log("Below array is created by filter method");
+console.log(outputFilterWithMap);
+
+
+//Array is used in reduce method 
+const outputReduce = users.reduce(function(acc, cur){
+    if(acc[cur.age]){
+        acc[cur.age] = ++acc[cur.age]
     }
-    return output;
-};
-console.log(calculateArea(radius,area));
-console.log(calculateArea(radius,circumference));
-console.log(calculateArea(radius,diameter));
+    else{
+        acc[cur.age] = 1;
+    }
+    return acc
+},{});
+console.log(outputReduce);
+
+// const array = [2,1,4,3,7,8,9,5];
+
+// function isOdd(x) {
+//     return x % 2;
+// }
+
+// const out = array.filter(isOdd)
+// console.log(out)
+
+
+// const radius = [3,2,1,4];
+
+// const area = function (radius) {
+//     return Math.PI*radius*radius;
+// };
+
+// const circumference = function (radius) {
+//     return 2*Math.PI*radius;
+// }
+// const diameter = function (radius){
+//     return 2*radius;
+// }
+
+// //This below function is also converted as same as map method
+
+// Array.prototype.calculate = function (logic) {
+//     const output = [];
+//     for(let i = 0; i < this.length; i++){
+//         output.push(logic(this[i]))
+//     }
+//     return output;
+// };
+
+// This below function is also converted as same as map method
+// function calculateArea(x,logic) {
+//     const output = [];
+//     for(let i = 0; i < x.length; i++){
+//         output.push(logic(x[i]))
+//     }
+//     return output;
+// };
+
+// area of a circle is also can be calculated by array.map method as below
+// console.log(radius.map(area));
+
+// console.log(radius.calculate(area));
+// console.log(radius.calculate(circumference));
+// console.log(radius.calculate(diameter));
 
 
 
