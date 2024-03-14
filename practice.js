@@ -1,16 +1,16 @@
 const radius = [3,2,1,4];
 const area = function (radius) {
-    Math.PI*radius*radius;
+    return Math.PI*radius*radius;
 }
 
-function calculateArea(x) {
+function calculateArea(x,logic) {
     const output = [];
-    for(let i = 0; i < radius.length; i++){
-        output.push(Math.PI * x[i]* x[i])
+    for(let i = 0; i < x.length; i++){
+        output.push(logic(x[i]))
     }
     return output;
 }
-console.log(calculateArea(radius));
+console.log(calculateArea(radius,area));
 
 
 
