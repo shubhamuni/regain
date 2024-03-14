@@ -7,9 +7,21 @@ const users = [
     {firstName:"Sunil",lastName:"Shetty",age:35},
 ]
 
-const output = users.map(x => x.firstName+" "+x.lastName);
-console.log("Below array is created by map method")
-console.log(output)
+//Firstly the output of array via map
+const outputMap = users.map(x => x.firstName+" "+x.lastName);
+console.log("Below array is created by map method");
+console.log(outputMap);
+
+//And the filter 
+const outputFilter = users.filter((x) => x.age > 30);
+console.log("Below array is created by filter method");
+console.log(outputFilter);
+
+
+//And filter with map
+// const outputFilterWithMap = users.filter((x) => x.age > 30).map(x => x.firstName +" "+ x.lastName);
+// console.log("Below array is created by filter method");
+// console.log(outputFilterWithMap);
 
 // const array = [2,1,4,3,7,8,9,5];
 
