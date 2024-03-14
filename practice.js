@@ -1,3 +1,13 @@
+const array = [2,1,4,3,7,8,9,5];
+
+function isOdd(x) {
+    return x % 2;
+}
+
+const out = array.filter(isOdd)
+console.log(out)
+
+
 const radius = [3,2,1,4];
 
 const area = function (radius) {
@@ -8,7 +18,7 @@ const circumference = function (radius) {
     return 2*Math.PI*radius;
 }
 const diameter = function (radius){
-    return 2*radius
+    return 2*radius;
 }
 
 //This below function is also converted as same as map method
