@@ -36,6 +36,16 @@ const outputReduce = users.reduce(function(acc, cur){
 },{});
 console.log(outputReduce);
 
+//Filter and map replacing reduce 
+const outputAttach = users.reduce(function(acc, cur){
+    if(cur.age < 30){
+        acc.push(cur.firstName)
+    }
+    return acc
+},[]);
+console.log(outputAttach);
+
+
 // const array = [2,1,4,3,7,8,9,5];
 
 // function isOdd(x) {
