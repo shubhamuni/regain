@@ -41,7 +41,7 @@ const outputAttach = users.reduce(function(acc, cur){
     if(cur.age < 30){
         acc.push(cur.firstName)
     }
-    return acc
+    return acc;
 },[]);
 console.log(outputAttach);
 
