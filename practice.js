@@ -23,6 +23,19 @@ const outputFilterWithMap = users.filter((x) => x.age > 30).map(x => x.firstName
 console.log("Below array is created by filter method");
 console.log(outputFilterWithMap);
 
+
+//Array is used in reduce method 
+const outputReduce = users.reduce(function(acc, cur){
+    if(acc[cur.age]){
+        acc[cur.age] = ++acc[cur.age]
+    }
+    else{
+        acc[cur.age] = 1;
+    }
+    return acc
+},{});
+console.log(outputReduce);
+
 // const array = [2,1,4,3,7,8,9,5];
 
 // function isOdd(x) {
