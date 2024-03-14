@@ -11,16 +11,31 @@ const diameter = function (radius){
     return 2*radius
 }
 
-function calculateArea(x,logic) {
+//This below function is also converted as same as map method
+
+Array.prototype.calculateArea = function (logic) {
     const output = [];
-    for(let i = 0; i < x.length; i++){
-        output.push(logic(x[i]))
+    for(let i = 0; i < this.length; i++){
+        output.push(logic(this[i]))
     }
     return output;
 };
-console.log(calculateArea(radius,area));
-console.log(calculateArea(radius,circumference));
-console.log(calculateArea(radius,diameter));
+
+// This below function is also converted as same as map method
+// function calculateArea(x,logic) {
+//     const output = [];
+//     for(let i = 0; i < x.length; i++){
+//         output.push(logic(x[i]))
+//     }
+//     return output;
+// };
+
+// area of a circle is also can be calculated by array.map method as below
+console.log(radius.map(area));
+
+console.log(radius.calculateArea(area));
+console.log(radius.calculateArea(circumference));
+console.log(radius.calculateArea(diameter));
 
 
 
