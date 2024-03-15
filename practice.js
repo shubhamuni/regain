@@ -1,7 +1,17 @@
-const array = [1,2,4,7,6,8,9,3,5];
-const double = [];
-const newArray = array.map(element => element*2);
-console.log(newArray)
+
+
+
+
+
+
+
+
+
+// // Example of basic map function
+// const array = [1,2,4,7,6,8,9,3,5];
+// const double = [];
+// const newArray = array.map(element => element*2);
+// console.log(newArray)
 // //Examples of map, filter and reduce
 // const users = [
 //     {firstName:"Shubham",lastName:"Patil",age:25},
