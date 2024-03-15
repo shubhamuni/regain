@@ -10,8 +10,11 @@ class Player {
         this.name = name
         this.type = type
     }
-
+    introduction() {
+        console.log(`Hello ${this.name} i'm a ${this.type}`)
+    }
 }
+class Wizard extends
 
 
 
