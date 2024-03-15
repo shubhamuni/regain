@@ -1,7 +1,8 @@
 // Reference types
 const object1 = {value:10};
-const object2 = object1;
-const object3 = {value:10};
+const object2 = object1;   //object1 === object2 return true because the object referencing to the same memory location as object1.
+const object3 = {value:10}; //object3 === object1 return false  because the memory location of object1 and object3 is different despite of these values are same.
+
 
 
 
