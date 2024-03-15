@@ -45,6 +45,15 @@ const outputAttach = users.reduce(function(acc, cur){
 },[]);
 console.log(outputAttach);
 
+//compose
+
+const compose = (f, g) => (a) => f(g(a));
+
+const powerOf = (x) => x*x;
+
+const compoutput = compose(powerOf, powerOf)(1);
+console.log(compoutput);
+
 
 // const array = [2,1,4,3,7,8,9,5];
 
