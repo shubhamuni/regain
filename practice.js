@@ -1,3 +1,7 @@
+// Reference types
+const object1 = {value:10};
+const object2 = object1;
+const object3 = {value:10};
 
 
 
