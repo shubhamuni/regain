@@ -24,7 +24,7 @@ class Wizard extends Player {
 };
 const player1 = new Wizard("Shubham", "Developer");
 player1.introduction();
-player1.play
+player1.play();
 
 
 
