@@ -1,58 +1,62 @@
-//Examples of map, filter and reduce
-const users = [
-    {firstName:"Shubham",lastName:"Patil",age:25},
-    {firstName:"Akshay",lastName:"Kumar",age:58},
-    {firstName:"Akshay",lastName:"Saini",age:25},
-    {firstName:"Elon",lastName:"Musk",age:54},
-    {firstName:"Sunil",lastName:"Shetty",age:35},
-]
+const array = [1,2,4,7,6,8,9,3,5];
+const double = [];
+const newArray = array.map(element => element*2);
+console.log(newArray)
+// //Examples of map, filter and reduce
+// const users = [
+//     {firstName:"Shubham",lastName:"Patil",age:25},
+//     {firstName:"Akshay",lastName:"Kumar",age:58},
+//     {firstName:"Akshay",lastName:"Saini",age:25},
+//     {firstName:"Elon",lastName:"Musk",age:54},
+//     {firstName:"Sunil",lastName:"Shetty",age:35},
+// ]
 
-//Firstly the output of array via map
-const outputMap = users.map(x => x.firstName+" "+x.lastName);
-console.log("Below array is created by map method");
-console.log(outputMap);
+// //Firstly the output of array via map
+// const outputMap = users.map(x => x.firstName+" "+x.lastName);
+// console.log("Below array is created by map method");
+// console.log(outputMap);
 
-//And the filter 
-const outputFilter = users.filter((x) => x.age > 30);
-console.log("Below array is created by filter method");
-console.log(outputFilter);
-
-
-//And filter with map
-const outputFilterWithMap = users.filter((x) => x.age > 30).map(x => x.firstName +" "+ x.lastName);
-console.log("Below array is created by filter method");
-console.log(outputFilterWithMap);
+// //And the filter 
+// const outputFilter = users.filter((x) => x.age > 30);
+// console.log("Below array is created by filter method");
+// console.log(outputFilter);
 
 
-//Array is used in reduce method 
-const outputReduce = users.reduce(function(acc, cur){
-    if(acc[cur.age]){
-        acc[cur.age] = ++acc[cur.age]
-    }
-    else{
-        acc[cur.age] = 1;
-    }
-    return acc
-},{});
-console.log(outputReduce);
+// //And filter with map
+// const outputFilterWithMap = users.filter((x) => x.age > 30).map(x => x.firstName +" "+ x.lastName);
+// console.log("Below array is created by filter method");
+// console.log(outputFilterWithMap);
 
-//Filter and map replacing reduce 
-const outputAttach = users.reduce(function(acc, cur){
-    if(cur.age < 30){
-        acc.push(cur.firstName)
-    }
-    return acc;
-},[]);
-console.log(outputAttach);
 
-//compose
+// //Array is used in reduce method 
+// const outputReduce = users.reduce(function(acc, cur){
+//     if(acc[cur.age]){
+//         acc[cur.age] = ++acc[cur.age]
+//     }
+//     else{
+//         acc[cur.age] = 1;
+//     }
+//     return acc
+// },{});
+// console.log(outputReduce);
 
-const compose = (f, g) => (a) => f(g(a));
+// //Filter and map replacing reduce 
+// const outputAttach = users.reduce(function(acc, cur){
+//     if(cur.age < 30){
+//         acc.push(cur.firstName)
+//     }
+//     return acc;
+// },[]);
+// console.log(outputAttach);
 
-const powerOf = (x) => x*x;
+// //compose
 
-const compoutput = compose(powerOf, powerOf)(1);
-console.log(compoutput);
+// const compose = (f, g) => (a) => f(g(a));
+
+// const powerOf = (x) => x*x;
+
+// const compoutput = compose(powerOf, powerOf)(1);
+// console.log(compoutput);
 
 
 // const array = [2,1,4,3,7,8,9,5];
