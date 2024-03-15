@@ -13,8 +13,18 @@ class Player {
     introduction() {
         console.log(`Hello ${this.name} i'm a ${this.type}`)
     }
-}
-class Wizard extends
+};
+class Wizard extends Player {
+    constructor(name,type){
+        super(name,type)
+    }
+    play(){
+        console.log(`Hello player ${this.name} you are a${this.type}`);
+    }
+};
+const player1 = new Wizard("Shubham", "Developer");
+player1.introduction();
+player1.play
 
 
 
