@@ -1,6 +1,21 @@
 // Pass by value and pass by reference
+const obj = {
+    a:"a",
+    b:"b",
+    c:"c",
+    d:{
+        deep:"deep inside object then d",
+        start:"And another property value pair"
+    }
+}
+const obj1 = Object.assign({},obj);
+const obj2 = {...obj}
+const obj3 = JSON.parse(JSON.stringify(obj));
+obj.d.deep = "value changed"
 
-
+console.log(obj1);
+console.log(obj2);
+console.log(obj3);
 
 
 
