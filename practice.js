@@ -1,4 +1,4 @@
-import data from "D:\test\regain\practice.json"
+import data from "D:/test/regain/practice.json"
 // Pass by value and pass by reference
 const obj = {
     a:"a",
