@@ -1,4 +1,4 @@
-import data from "D:/test/regain/practice.json"
+// import data from "D:/test/regain/practice.json"
 // Pass by value and pass by reference
 const obj = {
     a:"a",
@@ -11,7 +11,7 @@ const obj = {
 }
 
 const square = (x)=>x**2;
-const cube = (x)=>x**3;
+const cube = (y)=>y**3;
 
 const obj1 = Object.assign({},obj);
 const obj2 = {...obj}
@@ -21,9 +21,10 @@ obj.d.deep = "value changed"
 console.log(obj1);
 console.log(obj2);
 console.log(obj3);
-
-const parse = JSON.parse(data)
-console.log(parse);
+console.log("Square",square(3));
+console.log("Cube",cube(3));
+// const parse = JSON.parse(data)
+// console.log(parse);
 
 
 
