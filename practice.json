@@ -1,0 +1,15 @@
+{
+    "name":"Shubham",
+    "field":"Information Technology",
+    "isAdmin":true,
+    "marks":45,
+    "newObj":{
+        "style":["newlook","classic","vintage","retro"],
+        "isActive":true,
+        "from":"Village",
+        "inside":["nested",{
+            "inside":"a function",
+            "order":3
+        }]
+    }
+}
