@@ -1,3 +1,4 @@
+import data from "D:\test\regain\practice.json"
 // Pass by value and pass by reference
 const obj = {
     a:"a",
@@ -16,6 +17,9 @@ obj.d.deep = "value changed"
 console.log(obj1);
 console.log(obj2);
 console.log(obj3);
+
+const parse = JSON.parse(data)
+console.log(parse);
 
 
 
