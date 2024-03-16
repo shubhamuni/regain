@@ -9,6 +9,10 @@ const obj = {
         start:"And another property value pair"
     }
 }
+
+const square = (x)=>x**2;
+const cube = (x)=>x**3;
+
 const obj1 = Object.assign({},obj);
 const obj2 = {...obj}
 const obj3 = JSON.parse(JSON.stringify(obj));
