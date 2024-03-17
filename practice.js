@@ -50,14 +50,14 @@ const pokemon = {
         age: 4,
         weight:25,
         height:12,
-        power:"              Lightning"
+        power:"Lightning"
     }
 }
-const sample = pokemon.pikachu.power.trimStart(14);
+// const sample = pokemon.pikachu.power.trimStart(14);
 let power = pokemon?.pikachu?.power ?? "No Power"
 console.log(power)
 
-console.log(sample)
+// console.log(sample)
 
 
 
