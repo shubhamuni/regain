@@ -53,7 +53,7 @@ const pokemon = {
         power:"              Lightning"
     }
 }
-const sample = pokemon.pikachu.power.trimStart(14);
+// const sample = pokemon.pikachu.power.trimStart(14);
 let power = pokemon?.pikachu?.power ?? "No Power"
 console.log(power)
 
