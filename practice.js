@@ -35,9 +35,33 @@ const detailedBasket = {
     oranges:10,
     grapes: 1000
 }
-for (item in detailedBasket){
-    console.log(item)
+// for (item in detailedBasket){
+//     console.log(item)
+// }
+
+//ES2020 
+//BigInt
+//Nillish coalsing opertor??.
+//Optional chaining operator?
+
+const pokemon = {
+    pikachu:{
+        species:"Mouse Pokemon",
+        age: 4,
+        weight:25,
+        height:12
+    }
 }
+let power = pokemon?.pikachu?.power || "No Power"
+console.log(power)
+
+
+
+
+
+
+
+
 
 
 
