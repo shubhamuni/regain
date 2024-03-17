@@ -57,7 +57,7 @@ const pokemon = {
 let power = pokemon?.pikachu?.power ?? "No Power"
 console.log(power)
 
-console.log(sample)
+// console.log(sample)
 
 
 
