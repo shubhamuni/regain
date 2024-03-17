@@ -49,7 +49,8 @@ const pokemon = {
         species:"Mouse Pokemon",
         age: 4,
         weight:25,
-        height:12
+        height:12,
+        power:"Lightning"
     }
 }
 let power = pokemon?.pikachu?.power || "No Power"
