@@ -1,4 +1,4 @@
-import data from "D:/test/regain/practice.json"
+// import data from "D:/test/regain/practice.json"
 // Pass by value and pass by reference
 const obj = {
     a:"a",
@@ -9,6 +9,10 @@ const obj = {
         start:"And another property value pair"
     }
 }
+
+const square = (x)=>x**2;
+const cube = (y)=>y**3;
+
 const obj1 = Object.assign({},obj);
 const obj2 = {...obj}
 const obj3 = JSON.parse(JSON.stringify(obj));
@@ -17,13 +21,23 @@ obj.d.deep = "value changed"
 console.log(obj1);
 console.log(obj2);
 console.log(obj3);
+console.log("Square",square(3));
+console.log("Cube",cube(3));
+// const parse = JSON.parse(data)
+// console.log(parse);
 
-const parse = JSON.parse(data)
-console.log(parse);
+const flat = [1,[2,3,4,[5,6]],7];
+console.log(flat.flat(3));
 
-
-
-
+const detailedBasket = {
+    apple:5,
+    banana:3,
+    oranges:10,
+    grapes: 1000
+}
+for (item in detailedBasket){
+    console.log(item)
+}
 
 
 
