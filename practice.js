@@ -26,9 +26,18 @@ console.log("Cube",cube(3));
 // const parse = JSON.parse(data)
 // console.log(parse);
 
+const flat = [1,[2,3,4,[5,6]],7];
+console.log(flat.flat(3));
 
-
-
+const detailedBasket = {
+    apple:5,
+    banana:3,
+    oranges:10,
+    grapes: 1000
+}
+for (item in detailedBasket){
+    console.log(item)
+}
 
 
 
