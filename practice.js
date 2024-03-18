@@ -12,7 +12,7 @@ let endDate = startDate;
 
 while(endDate < startDate + 5000){
     endDate = new Date().getTime();
-    console.log("loop is running")
+    console.log("loop running")
 };
 
 
