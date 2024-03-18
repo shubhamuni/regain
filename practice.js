@@ -1,6 +1,18 @@
 //Testing setTimeout() trust issue(it's about timeout delay)
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Timeout expired")
+}, 2000);
+
 const startDate= new Date().getTime();
-console.log(startDate)
+// console.log(startDate);
+let endDate = startDate;
+
+while(endDate < startDate + 5000){
+    endDate = new Date().getTime();
+    console.log("loop running")
+}
 
 
 //how to debug a code between execution.
