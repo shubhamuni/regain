@@ -1,4 +1,6 @@
-
+//Testing setTimeout() trust issue(it's about timeout delay)
+const startDate= new Date().getTime();
+console.log(startDate)
 
 
 //how to debug a code between execution.
