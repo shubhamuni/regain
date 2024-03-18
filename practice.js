@@ -1,61 +1,95 @@
-// import data from "D:/test/regain/practice.json"
+
+
+
+//how to debug a code between execution.
+
+// const flatArray = [[0,1],[2,3],[4,5],[6,7]];
+
+// const newArray = flatArray.reduce((acc, cur)=>{
+//     debugger
+//     return acc.concat(cur)
+// },[])
+
+
+// console.log(newArray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Pass by value and pass by reference
-const obj = {
-    a:"a",
-    b:"b",
-    c:"c",
-    d:{
-        deep:"deep inside object then d",
-        start:"And another property value pair"
-    }
-}
-
-const square = (x)=>x**2;
-const cube = (y)=>y**3;
-
-const obj1 = Object.assign({},obj);
-const obj2 = {...obj}
-const obj3 = JSON.parse(JSON.stringify(obj));
-obj.d.deep = "value changed"
-
-console.log(obj1);
-console.log(obj2);
-console.log(obj3);
-console.log("Square",square(3));
-console.log("Cube",cube(3));
-// const parse = JSON.parse(data)
-// console.log(parse);
-
-const flat = [1,[2,3,4,[5,6]],7];
-console.log(flat.flat(3));
-
-const detailedBasket = {
-    apple:5,
-    banana:3,
-    oranges:10,
-    grapes: 1000
-}
-// for (item in detailedBasket){
-//     console.log(item)
+// const obj = {
+//     a:"a",
+//     b:"b",
+//     c:"c",
+//     d:{
+//         deep:"deep inside object then d",
+//         start:"And another property value pair"
+//     }
 // }
 
-//ES2020 
-//BigInt
-//Nillish coalsing opertor??.
-//Optional chaining operator?
+// const square = (x)=>x**2;
+// const cube = (y)=>y**3;
 
-const pokemon = {
-    pikachu:{
-        species:"Mouse Pokemon",
-        age: 4,
-        weight:25,
-        height:12,
-        power:"Lightning"
-    }
-}
-// const sample = pokemon.pikachu.power.trimStart(14);
-let power = pokemon?.pikachu?.power ?? "No Power"
-console.log(power)
+// const obj1 = Object.assign({},obj);
+// const obj2 = {...obj}
+// const obj3 = JSON.parse(JSON.stringify(obj));
+// obj.d.deep = "value changed"
+
+// console.log(obj1);
+// console.log(obj2);
+// console.log(obj3);
+// console.log("Square",square(3));
+// console.log("Cube",cube(3));
+// // const parse = JSON.parse(data)
+// // console.log(parse);
+
+// const flat = [1,[2,3,4,[5,6]],7];
+// console.log(flat.flat(3));
+
+// const detailedBasket = {
+//     apple:5,
+//     banana:3,
+//     oranges:10,
+//     grapes: 1000
+// }
+// // for (item in detailedBasket){
+// //     console.log(item)
+// // }
+
+// //ES2020 
+// //BigInt
+// //Nillish coalsing opertor??.
+// //Optional chaining operator?
+
+// const pokemon = {
+//     pikachu:{
+//         species:"Mouse Pokemon",
+//         age: 4,
+//         weight:25,
+//         height:12,
+//         power:"Lightning"
+//     }
+// }
+// // const sample = pokemon.pikachu.power.trimStart(14);
+// let power = pokemon?.pikachu?.power ?? "No Power"
+// console.log(power)
 
 // console.log(sample)
 
