@@ -1,1 +1,3 @@
-newJsFile
+const obj = {
+    name:"Shubham"
+}

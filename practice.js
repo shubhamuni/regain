@@ -15,6 +15,10 @@ while(endDate < startDate + 5000){
     console.log("loop running")
 };
 
+const foodsByUsers = {
+    
+}
+
 
 //how to debug a code between execution.
 
