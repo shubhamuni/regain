@@ -1,10 +1,11 @@
 //Testing setTimeout() trust issue(it's about timeout delay)
 console.log("Start");
-
+const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
 setTimeout(() => {
     console.log("Timeout expired")
 }, 2000);
-
+const arraySort = array.sort();
+console.log(arraySort)
 const startDate= new Date().getTime();
 // console.log(startDate);
 let endDate = startDate;
