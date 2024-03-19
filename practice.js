@@ -16,7 +16,8 @@ while(endDate < startDate + 5000){
 };
 
 const foodsByUsers = {
-    
+    shubham:["Banana","Orange","Mango"],
+    sahil:["Apple","Papaya"]
 }
 
 
